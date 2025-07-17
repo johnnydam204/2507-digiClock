@@ -1,0 +1,31 @@
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPathWin": "C:\\Users\\duand\\esp\\v5.4.2\\esp-idf",
+  "idf.toolsPathWin": "C:\\Users\\duand\\.espressif",
+  "idf.pythonInstallPath": "C:\\Users\\duand\\.espressif\\tools\\idf-python\\3.11.2\\python.exe",
+  "files.associations": {
+    "gpio.h": "c",
+    "esp_rom_gpio.h": "c",
+    "hal_74hc595.h": "c",
+    "esp_log.h": "c",
+    "rtc_io.h": "c",
+    "bsp_74hc595.h": "c",
+    "cstdint": "c",
+    "bsp_led7seg.h": "c"
+  },
+  "idf.openOcdConfigs": [
+    "interface/ftdi/esp_ftdi.cfg",
+    "target/esp32.cfg"
+  ],
+  "idf.customExtraVars": {
+    "IDF_TARGET": "esp32"
+  },
+  "clangd.path": "C:\\Users\\duand\\.espressif\\tools\\esp-clang\\esp-18.1.2_20240912\\esp-clang\\bin\\clangd.exe",
+  "clangd.arguments": [
+    "--background-index",
+    "--query-driver=C:\\Users\\duand\\.espressif\\tools\\xtensa-esp-elf\\esp-14.2.0_20241119\\xtensa-esp-elf\\bin\\xtensa-esp32-elf-gcc.exe",
+    "--compile-commands-dir=c:\\Users\\duand\\OneDrive\\Desktop\\digiClock\\build"
+  ],
+  "C_Cpp.errorSquiggles": "enabled",
+  "idf.flashType": "UART"
+}
