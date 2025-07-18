@@ -1,6 +1,11 @@
 idf_component_register(
     SRCS 
         "src/app_main.c"         
-    INCLUDE_DIRS "inc"
-    REQUIRES inf
+    INCLUDE_DIRS 
+        "inc"
+    REQUIRES 
+        "driver"
+        "freertos"
+        "inf" 
+        "cfg"
 )

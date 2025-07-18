@@ -1,25 +1,26 @@
 /**
+ * ******************************************************************************************
  * @file bsp_led7seg.h
- * @brief Header file for the BSP driver for 7-segment LED display
+ * @brief Board Support Package for the 7-segment LED display used with a shift register (74HC595).
  * @author Johnny
- * @date 2025-07-03
- * @note This driver is designed to be used with the ESP-IDF framework and is compatible with various ESP32-based development boards.
+ * @date 2025/07
  * @version 1.0
-*/
-
+ * ******************************************************************************************
+ **/
+ 
 #ifndef __BSP_LED7SEG_H__
 #define __BSP_LED7SEG_H__
 
 #include <stdint.h>
 #include "esp_err.h"
-#include "hw_board_cfg.h"
-#include "bsp_74hc595.h"
+#include "cfg_board_hw.h"   // Include hardware board configuration
+#include "bsp_74hc595.h"    // Include the header for the 74HC595 shift register
 
 #ifdef __cplusplus
 extern "C" {   
 #endif
 
-#define NUM_DIGITS  SEG_LED_NUM_DIGI // Number of digits in the 7-segment display, SEG_LED_NUM_DIGI from hw_board_cfg.h
+#define NUM_DIGITS  TIME_DIGITS // Number of digits in the 7-segment display, TIME_DIGITS from hw_board_cfg.h
 
 /**
  * @brief Initialize the 7-segment LED display

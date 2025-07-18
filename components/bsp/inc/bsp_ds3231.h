@@ -1,23 +1,19 @@
 /**
+ * ******************************************************************************************
  * @file bsp_ds3231.h
- * @brief BSP driver for DS3231 RTC module
- *
- * Provides high-level APIs to interact with the DS3231 real-time clock
- * over I2C interface.
- *
- * This driver abstracts the DS3231 RTC operations including reading and
- * writing time using `struct tm` format.
- * 
+ * @brief Board Support Package for the DS3231 RTC module
  * @author Johnny
- * @date 2025-07-03
- */
-
+ * @date 2025/07
+ * @version 1.0
+ * ******************************************************************************************
+ **/
+ 
 #ifndef __BSP_DS3231_H__
 #define __BSP_DS3231_H__ 
 
 #include <stdint.h>
 #include "hal_i2c.h"
-#include "hw_board_cfg.h"
+#include "cfg_board_hw.h" // Include hardware board configuration
 
 #ifdef __cplusplus
 extern "C" {

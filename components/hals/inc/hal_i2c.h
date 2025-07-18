@@ -13,7 +13,7 @@
 #include <stdint.h>
 #include "esp_err.h"
 #include "driver/i2c.h"
-#include "hw_board_cfg.h"
+#include "cfg_board_hw.h" // Include hardware board configuration
 
 #ifdef __cplusplus
 extern "C" {

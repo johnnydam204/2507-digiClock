@@ -1,17 +1,19 @@
 /**
+ * ******************************************************************************************
  * @file inf_display.h
  * @brief Header file for the interface of 7-segment display using a shift register (74HC595).
  * @author Johnny
- * @date 2025-07-03
+ * @date 2025/07
  * @version 1.0
- */
+ * ******************************************************************************************
+ **/
 
 #ifndef __INF_DISPLAY_H__
 #define __INF_DISPLAY_H__
 
 #include <stdint.h>
 #include "bsp_led7seg.h"    // Include the header for the 74HC595 shift register
-#include "hw_board_cfg.h"   // Include hardware board configuration
+#include "cfg_board_hw.h"   // Include hardware board configuration
 
 #ifdef __cplusplus
 extern "C" {

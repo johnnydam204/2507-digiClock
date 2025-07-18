@@ -1,15 +1,12 @@
 /**
+ * ******************************************************************************************
  * @file bsp_74hc595.h
- * @brief This file is part of the BSP (Board Support Package) for the 74HC595 shift register.
- * This file contains function declarations for initializing, sending data to,
- * clearing, and latching the output of the 74HC595 shift register.
- * This driver is designed to work with the ESP-IDF framework and uses GPIO pins
- * for communication with the 74HC595 shift register.
- * @note The GPIO pins used for the 74HC595 are defined in the hw_board_cfg.h file.
- * @author Johnny 
- * @date 2023-10-01
+ * @brief Board Support Package for the 74HC595 shift register
+ * @author Johnny
+ * @date 2025/07
  * @version 1.0
- */
+ * ******************************************************************************************
+ **/
 
 #ifndef __BSP_74HC595_H__
 #define __BSP_74HC595_H__
@@ -17,7 +14,7 @@
 #include <stdint.h>
 #include "esp_err.h"
 #include "hal_gpio.h"
-#include "hw_board_cfg.h"
+#include "cfg_board_hw.h" // Include hardware board configuration
 
 #ifdef __cplusplus
 extern "C" {

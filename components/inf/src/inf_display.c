@@ -7,7 +7,7 @@ static const char *TAG = "INF_DISPLAY";
 // End of file: components/interface/src/inf_7seg_disp.c
 esp_err_t INF_Display_Init(void)
 {   
-    BSP_Led7Seg_Init(void);
+    BSP_Led7Seg_Init();
     return ESP_OK;
 }
 

@@ -1,16 +1,15 @@
 /**
- * @file hw_board_cfg.h
- * @brief Hardware board configuration header file
- * 
- * This header file contains the hardware configuration for the board,
- * including GPIO pin definitions and other hardware-related settings.
- * 
+ * ******************************************************************************************
+ * @file cfg_board_hw.h
+ * @brief Hardware board configuration header file.
  * @author Johnny
- * @date 2025-07-03
- */
+ * @date 2025/07
+ * @version 1.0
+ * ******************************************************************************************
+ **/
 
-#ifndef __HW_BOARD_CFG_H__
-#define __HW_BOARD_CFG_H__
+#ifndef __CFG_BOARD_HW_H__
+#define __CFG_BOARD_HW_H__
 
 #include <stdint.h>
 #include "driver/gpio.h"
@@ -25,7 +24,7 @@ extern "C"  {
 #define SLCH    GPIO_NUM_32     // Latch Storage clock pin for Shift Register 74HC595
 
 // Hardware GPIO pin definitions for 7-Segment Display
-#define SEG_LED_NUM_DIGI  6     // Number of 7-segment display digits (HH:MM:SS)
+#define TIME_DIGITS  6     // Number of 7-segment display digits (HH:MM:SS)
 const uint8_t LED_CODE[11]= {0xFA,0xC0,0xB9,0xE9,0xC3,0x6B,0x7B,0xC8,0xFB,0xEB,0xFF}; // Segment codes for digits 0-9 and OFF
 
 // Hardware definitions for I2C
@@ -66,4 +65,5 @@ const uint8_t LED_CODE[11]= {0xFA,0xC0,0xB9,0xE9,0xC3,0x6B,0x7B,0xC8,0xFB,0xEB,0
 
 // End of GPIO pin definitions
 
-#endif // __HW_BOARD_CFG_H__
+#endif // __CFG_BOARD_HW_H__
+// End of file: components/cfg/inc/cfg_board_hw.h

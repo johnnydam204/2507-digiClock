@@ -10,7 +10,7 @@ static uint8_t g_led_display_data[NUM_DIGITS] = {0}; // Mảng lưu trữ mã hi
 
 esp_err_t BSP_Led7Seg_Init(void)
 {
-    BSP_74hc595_Init();
+    //BSP_74hc595_Init();
     return ESP_OK;
 }
 

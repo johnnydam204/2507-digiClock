@@ -3,6 +3,8 @@ idf_component_register(
         # "src/bsp_ds3231.c"
         "src/bsp_led7seg.c"
         "src/bsp_74hc595.c"          
-    INCLUDE_DIRS "inc"
-    REQUIRES hals
+    INCLUDE_DIRS 
+        "inc"
+    REQUIRES 
+        "hals"
 )

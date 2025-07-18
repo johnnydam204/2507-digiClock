@@ -11,7 +11,8 @@
     "rtc_io.h": "c",
     "bsp_74hc595.h": "c",
     "cstdint": "c",
-    "bsp_led7seg.h": "c"
+    "bsp_led7seg.h": "c",
+    "task.h": "c"
   },
   "idf.openOcdConfigs": [
     "interface/ftdi/esp_ftdi.cfg",
